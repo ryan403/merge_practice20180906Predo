@@ -9,10 +9,12 @@ $(document).ready(function(){
         //alert( $( "input[type=date]" ).val() );
         //2018-09-03
         var inputDate = $( "input[type=date]" ).val();
+        if(inputDate){
         var splitText = inputDate.split("-");
         console.log(splitText[1]);
         setMonthAndDay(splitText[1],splitText[2]);
         setTable();
+        }
     });
      
 });
